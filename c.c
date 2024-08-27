@@ -12,7 +12,7 @@ int main(void)
     // Let's make some space to hold our numbers
     int *a = calloc(size, sizeof(int));
     if (a == NULL) {
-        printf("Uh-oh! We couldn't get enough memory.\n");
+        printf("oh We couldn't get enough memory.\n");
         return 1;
     }
 
@@ -33,7 +33,7 @@ int main(void)
     // Now let's make the array bigger so we can add more stuff
     a = realloc(a, sizeof(int) * (size + 5));
     if (a == NULL) {
-        printf("Oops! We ran out of memory while trying to resize.\n");
+        printf("Opssie! We ran out of memory while trying to resize.\n");
         return 1;
     }
 
